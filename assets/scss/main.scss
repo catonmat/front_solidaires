@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5,
 		font-size: 38px;
 		color: $white;
 		line-height: 1.2;
-		font-weight: 900;
+		font-weight: bold;
 		// text-transform: uppercase;
 		// letter-spacing: 5px;
 		@include media-breakpoint-down(md) {
@@ -379,8 +379,9 @@ h1, h2, h3, h4, h5,
 
 .login-wrap{
     width:100%;
-	max-width:525px;
-	min-height:550px;
+	max-width:450px;
+    min-height:550px;
+    height: 750px;
 	position:relative;
 	border-radius: 25px;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -429,7 +430,7 @@ h1, h2, h3, h4, h5,
 	border-color:$primary;
 }
 .login-form{
-    margin-top: 45px;
+    margin-top: 15px;
 	min-height:345px;
 	position:relative;
 	perspective:1000px;
@@ -562,8 +563,8 @@ h1, h2, h3, h4, h5,
 
 .ftco-footer {
 	font-size: 16px;
-	background: #1e1e1e;
-	padding: 7em 0;
+	background: #3385bb;
+	padding: 4em 0;
 	z-index: 0;
 	
 	.ftco-footer-widget {
@@ -571,7 +572,7 @@ h1, h2, h3, h4, h5,
 			font-weight: normal;
 			color: $white;
 			margin-bottom: 40px;
-			font-size: 24px;
+			font-size: 18px;
 			font-weight: 900;
 		}
 		ul{
@@ -637,7 +638,9 @@ h1, h2, h3, h4, h5,
 }
 
 
-
+.alignend{
+    text-align: end;
+}
 
 .ftco-overflow-hidden {
 	overflow: hidden;
@@ -649,15 +652,6 @@ h1, h2, h3, h4, h5,
 }
 
 
-
-//COVER BG
-.img,
-.blog-img,
-.user-img{
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
 
 
 
@@ -692,4 +686,10 @@ body::-webkit-scrollbar {
   ::-moz-selection {
     background: #9c27b0;
     color: #fff
+  }
+
+  .soulignement {
+	text-decoration: underline  #ffb400;
+   
+  
   }
