@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5,
 		}
 		> .nav-item {
 			> .nav-link {
-				font-size: 18px;
+				font-size: 16px;
 				padding-top: 1.8rem;
 				padding-bottom: 1.8rem;
 				padding-left: 20px;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5,
 				font-weight: 700;
 				color: $white;
 				&:hover {
-					color: $primary;
+					color: $primary !important;
 				}
 				opacity: 1!important;
 				@include media-breakpoint-down(md){
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap{
 	width: 100%;
-	height: 100%;
+	height: 1000px;
 	position: inherit;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -298,8 +298,8 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		opacity: .1;
-		background: $white;
-		height: 800px;
+		background: #303240;
+		height: 1000px;
 		@include media-breakpoint-down(lg){
 			opacity: 0;
 		}
@@ -392,6 +392,7 @@ h1, h2, h3, h4, h5,
     padding: 30px 50px 0px 50px;
     background:white;
     border-radius: 25px;
+    
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -415,7 +416,7 @@ h1, h2, h3, h4, h5,
 	text-transform:uppercase;
 }
 .login-html .tab{
-	font-size:22px;
+	font-size:16px;
 	margin-right:15px;
 	padding-bottom:5px;
 	margin:0 15px 10px 0;
@@ -428,6 +429,7 @@ h1, h2, h3, h4, h5,
 	border-color:$primary;
 }
 .login-form{
+    margin-top: 45px;
 	min-height:345px;
 	position:relative;
 	perspective:1000px;
@@ -444,7 +446,7 @@ h1, h2, h3, h4, h5,
 	display:block;
 }
 .login-form .group .input{
-	padding: 15px 20px;
+    padding: 5px;
   background: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 2px solid #6c757d; }
