@@ -242,8 +242,8 @@ h1, h2, h3, h4, h5,
 	
 		.navbar-toggler {
 			border: none;
-			color: rgba(0,0,0,.5)!important;
-			border-color: rgba(0,0,0,.5)!important;
+			color: $primary!important;
+			border-color: $primary!important;
 			cursor: pointer;
 			padding-right: 0;
 			text-transform: uppercase;
@@ -254,9 +254,9 @@ h1, h2, h3, h4, h5,
 		.nav-link {
 			padding-top: .9rem!important;
 			padding-bottom: .9rem!important;
-			color: $black!important;
+			color: $primary!important;
 			&.active {
-				color: $primary!important;
+				color: white!important;
 			}
 		}
 		&.awake {
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		opacity: .1;
-		background: #303240;
+		background: linear-gradient(to left, #000000, #2a8bb1, #e1e8ec 75%, #eaeaea 75%);
 		height: 1000px;
 		@include media-breakpoint-down(lg){
 			opacity: 0;
@@ -450,7 +450,13 @@ h1, h2, h3, h4, h5,
     padding: 5px;
   background: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: 2px solid #6c757d; }
+  border-bottom: 2px solid #6c757d; 
+  color:#000000;}
+
+  .login-form .group .input:focus{
+    outline: none; 
+  border-bottom: 2px solid $primary; 
+  }
 
 .login-form .group .button{
     border:none;
@@ -467,7 +473,7 @@ h1, h2, h3, h4, h5,
 	font-size:14px;
 }
 .login-form .group .button{
-	background:#1161eeab;
+	background:#336cd2ab;
 }
 .login-form .group .button:hover{
 	background:$primary;
@@ -573,7 +579,7 @@ h1, h2, h3, h4, h5,
 			color: $white;
 			margin-bottom: 40px;
 			font-size: 18px;
-			font-weight: 900;
+			font-weight: 500;
 		}
 		ul{
 			li{
@@ -680,11 +686,11 @@ body::-webkit-scrollbar {
   
 
   ::selection  {
-    background: #9c27b0;
+    background: $primary;
     color: #fff
   }
   ::-moz-selection {
-    background: #9c27b0;
+    background: $primary;
     color: #fff
   }
 
@@ -693,3 +699,12 @@ body::-webkit-scrollbar {
    
   
   }
+
+
+  .btn-warning {
+    color: white;
+    background-color: #ffc107;
+	border-color: #ffc107;
+	border-radius: 25px;
+}
+

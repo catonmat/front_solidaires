@@ -7182,8 +7182,8 @@ h1, h2, h3, h4, h5,
       outline: none !important; }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(0, 0, 0, 0.5) !important;
-    border-color: rgba(0, 0, 0, 0.5) !important;
+    color: #ffb400 !important;
+    border-color: #ffb400 !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -7192,9 +7192,9 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .nav-link {
     padding-top: 0.9rem !important;
     padding-bottom: 0.9rem !important;
-    color: #000000 !important; }
+    color: #ffb400 !important; }
     .ftco-navbar-light .nav-link.active {
-      color: #ffb400 !important; }
+      color: white !important; }
   .ftco-navbar-light.awake {
     margin-top: 0px;
     transition: .3s all ease-out; }
@@ -7225,7 +7225,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .1;
-    background: #303240;
+    background: linear-gradient(to left, #000000, #2a8bb1, #e1e8ec 75%, #eaeaea 75%);
     height: 1000px; }
     @media (max-width: 1199.98px) {
       .hero-wrap .overlay {
@@ -7246,7 +7246,7 @@ h1, h2, h3, h4, h5,
     font-size: 38px;
     color: #fff;
     line-height: 1.2;
-    font-weight: 900; }
+    font-weight: bold; }
     @media (max-width: 991.98px) {
       .slider-text h1 {
         font-size: 40px; } }
@@ -7281,8 +7281,9 @@ h1, h2, h3, h4, h5,
 
 .login-wrap {
   width: 100%;
-  max-width: 525px;
+  max-width: 450px;
   min-height: 550px;
+  height: 750px;
   position: relative;
   border-radius: 25px;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
@@ -7330,7 +7331,7 @@ h1, h2, h3, h4, h5,
   border-color: #ffb400; }
 
 .login-form {
-  margin-top: 45px;
+  margin-top: 15px;
   min-height: 345px;
   position: relative;
   perspective: 1000px;
@@ -7350,7 +7351,12 @@ h1, h2, h3, h4, h5,
   padding: 5px;
   background: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: 2px solid #6c757d; }
+  border-bottom: 2px solid #6c757d;
+  color: #000000; }
+
+.login-form .group .input:focus {
+  outline: none;
+  border-bottom: 2px solid #ffb400; }
 
 .login-form .group .button {
   border: none;
@@ -7367,7 +7373,7 @@ h1, h2, h3, h4, h5,
   font-size: 14px; }
 
 .login-form .group .button {
-  background: #1161eeab; }
+  background: #336cd2ab; }
 
 .login-form .group .button:hover {
   background: #ffb400; }
@@ -7444,15 +7450,15 @@ h1, h2, h3, h4, h5,
 
 .ftco-footer {
   font-size: 16px;
-  background: #1e1e1e;
-  padding: 7em 0;
+  background: #3385bb;
+  padding: 4em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
     margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 900; }
+    font-size: 18px;
+    font-weight: 500; }
   .ftco-footer .ftco-footer-widget ul li a {
     color: rgba(255, 255, 255, 0.4); }
     .ftco-footer .ftco-footer-widget ul li a span {
@@ -7495,19 +7501,15 @@ h1, h2, h3, h4, h5,
     .ftco-footer-social li a:hover {
       color: #fff; }
 
+.alignend {
+  text-align: end; }
+
 .ftco-overflow-hidden {
   overflow: hidden; }
 
 .padding-top-bottom {
   padding-top: 120px;
   padding-bottom: 120px; }
-
-.img,
-.blog-img,
-.user-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
 
 body::-webkit-scrollbar {
   background-color: rgba(247, 245, 245, 0.733);
@@ -7528,9 +7530,18 @@ body::-webkit-scrollbar-button {
   display: none; }
 
 ::selection {
-  background: #9c27b0;
+  background: #ffb400;
   color: #fff; }
 
 ::-moz-selection {
-  background: #9c27b0;
+  background: #ffb400;
   color: #fff; }
+
+.soulignement {
+  text-decoration: underline  #ffb400; }
+
+.btn-warning {
+  color: white;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  border-radius: 25px; }

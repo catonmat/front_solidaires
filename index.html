@@ -30,7 +30,7 @@
       <div class="overlay"></div>
         <div class="container">
             <div class="row">
-            <div class="col-md-6 " style="margin-top: 250px; margin-left: -150px;" >
+            <div class="col-md-6 " style="margin-top: 200px; margin-left: -150px;" >
                 <div class="login-wrap">
                     <div class="login-html">
                         <input id="tab-1" type="radio" name="tab" class="sign-in" checked=""><label for="tab-1" class="tab">Connexion</label>
@@ -40,11 +40,11 @@
                             <form style="margin-top: 125px;" action="" method="POST">
                                 <div class="group">
                                     <label for="user" class="label">ADRESSE EMAIL</label>
-                                    <input name="email" required="" id="user" type="email" class="input">
+                                    <input name="email" required="" id="user" type="email" class="input" placeholder="Email">
                                 </div>
                                 <div class="group">
                                     <label for="pass" class="label">MOT DE PASSE</label>
-                                    <input required="" name="password" id="pass" type="password" class="input" data-type="password">
+                                    <input required="" name="password" id="pass" type="password" class="input" data-type="password" placeholder="Mot de passe">
                                 </div>
                                 
                                 <div class="group" style="margin-top: 50px;">
@@ -53,36 +53,36 @@
                                
                                 </form>  
                                 <div  style="margin-top: 25px; text-align: center;">
-<a style="color: #6c757d;" href="">Mot de passe oublié</a>
+                                  <a style="color: #6c757d;" href="">Mot de passe oublié</a>
                                 </div>
                                 
                             </div>
                             
-                            <form action="">
-   <div class="sign-up-htm mt-4">
+                            <form action="" method="POST">
+                                <div class="sign-up-htm mt-4">
                                 <div class="group">
-                                    <label for="user" class="label">NOM</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">NOM</label>
+                                    <input type="text" class="input" placeholder="Dupont" required >
                                 </div>
                                 <div class="group">
-                                    <label for="user" class="label">PRENOM</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">PRENOM</label>
+                                    <input type="text" class="input" placeholder="Jean" required>
                                 </div>
                                 <div class="group">
-                                    <label for="user" class="label">NUMERO DE TELEPHONE</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">NUMERO DE TELEPHONE</label>
+                                    <input type="tel" pattern="[0-9]{10}" class="input" placeholder="06 01 02 03 04" required>
                                 </div>
                                 <div class="group">
-                                    <label for="pass" class="label">ADRESSE EMAIL</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">ADRESSE EMAIL</label>
+                                    <input type="email" class="input" placeholder="jeandupont@gmail.com" required>
                                 </div>
                                 <div class="group">
-                                    <label for="pass" class="label">MOT DE PASSE</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">MOT DE PASSE</label>
+                                    <input required="" name="password" id="" type="password" class="input" data-type="password" placeholder="Mot de passe" required>
                                 </div>
                                 <div class="group">
-                                    <label for="pass" class="label">CONFIRMATION DE MOT DE PASSE</label>
-                                    <input type="text" class="input">
+                                    <label  class="label">CONFIRMATION DE MOT DE PASSE</label>
+                                    <input required="" name="password" id="" type="password" class="input" data-type="password" placeholder="Confirmer" required>
                                 </div>
                                 
                                 <div class="group">
@@ -101,7 +101,7 @@
             </div>
 <div class="col-md-6 " style="margin-top: 550px;">
             <div class="row no-gutters slider-text align-items-center " >
-                <div class="col-md-12 order-md-last  mt-5 text-center" >
+                <div class="col-md-12 order-md-last  mt-5 text-left" >
                   <h1 class="mb-4 soulignement">DES LOGEMENTS GRATUITS POUR NOS SOIGNANTS</h1>
                   <p><a href="#" class="btn btn-warning py-3 px-4">Proposer un hébergement</a></p>
                 </div>
@@ -118,7 +118,7 @@
       </div>
     </div>
 
-
+    
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
