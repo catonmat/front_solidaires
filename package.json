@@ -1,0 +1,20 @@
+{
+  "name": "solidaires",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass assets/scss/main.scss assets/css/style.css ",
+    "compile:sass:dev":"node-sass assets/scss/main.scss assets/css/style.css --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelKlimovich/front_solidaires.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelKlimovich/front_solidaires/issues"
+  },
+  "homepage": "https://github.com/PavelKlimovich/front_solidaires#readme"
+}
